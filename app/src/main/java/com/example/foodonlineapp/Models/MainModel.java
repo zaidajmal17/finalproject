@@ -1,21 +1,24 @@
 package com.example.foodonlineapp.Models;
 
 public class MainModel {
-    int image;
+    String image;
     String name, price, description;
 
-    public MainModel(int image, String name, String price, String description) {
+    public MainModel(String image, String name, String price, String description) {
         this.image = image;
         this.name = name;
         this.price = price;
         this.description = description;
     }
 
-    public int getImage() {
+    public MainModel() {
+    }
+
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 

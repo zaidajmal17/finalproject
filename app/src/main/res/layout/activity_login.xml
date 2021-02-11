@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/lgemail"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="Email / Phone"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/lgpassword"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/Noaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Don't have an account!" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="or" />
+
+        <ImageView
+            android:id="@+id/logingmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/lgphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Sign Up with Phone" />
+    </LinearLayout>
+
+</LinearLayout>

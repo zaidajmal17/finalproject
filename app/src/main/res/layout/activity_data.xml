@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/ivupload">
+            ">
+
+        </ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Recipe Name"
+            android:textSize="16sp"
+            android:id="@+id/etname"
+            android:layout_marginTop="20dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Recipe Description"
+            android:id="@+id/etdes"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Recipe Price"
+            android:id="@+id/etprice"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp">
+
+        </EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Select Image"
+            android:textSize="22sp"
+            android:onClick="btnSelectImage">
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Upload Image"
+            android:textSize="22sp"
+            android:onClick="btnuploadactivity">
+
+        </Button>
+
+    </LinearLayout>
+</ScrollView>

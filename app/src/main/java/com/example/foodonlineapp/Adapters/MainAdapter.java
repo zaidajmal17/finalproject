@@ -11,9 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.foodonlineapp.Details;
+import com.bumptech.glide.Glide;
+import com.example.foodonlineapp.Activities.Details;
 import com.example.foodonlineapp.Models.MainModel;
 import com.example.foodonlineapp.R;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -35,20 +37,22 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewholder> {
 
     @Override
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
-        final MainModel model = list.get(position);
-        holder.foodimage.setImageResource(model.getImage());
+         MainModel model = list.get(position);
+      Glide.with(context).load(model.getImage())
+              .placeholder(R.drawable.background)
+              .into(holder.foodimage);
         holder.tvmname.setText(model.getName());
         holder.tvmprice.setText(model.getPrice());
         holder.tvmdes.setText(model.getDescription());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, Details.class);
-                intent.putExtra("image",model.getImage());
-                intent.putExtra("price",model.getPrice());
-                intent.putExtra("description",model.getDescription());
-                intent.putExtra("name",model.getName());
-                context.startActivity(intent);
+//                Intent intent = new Intent(context, Details.class);
+//                intent.putExtra("image",model.getImage());
+//                intent.putExtra("price",model.getPrice());
+//                intent.putExtra("description",model.getDescription());
+//                intent.putExtra("name",model.getName());
+//                context.startActivity(intent);
 
 
             }
